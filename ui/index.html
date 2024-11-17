@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Replai.so Admin Panel</title>
+    <link href="dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container max-w-[1000px] mx-auto mt-[120px]">
+      <h1 class="text-3xl font-bold flex items-center">
+        <img src="dist/replai_symbol.svg" class="max-w-[48px] mr-2" /> Replai.so
+      </h1>
+      <div class="mt-[15px] flex">
+        <div class="mr-[10px]">
+          🎁
+          <a
+            target="_blank"
+            href="https://replai.notion.site/Get-free-prompts-from-Replai-so-41b16210eca54c46817656b64f43f4c8"
+            class="underline"
+            >Get free replies</a
+          >
+        </div>
+        <div class="mr-[10px]">
+          🔑
+          <a target="_blank" href="https://replai.so/pricing/" class="underline"
+            >Buy a license key</a
+          >
+        </div>
+        <div class="mr-[10px]">
+          🐦
+          <a
+            target="_blank"
+            href="https://twitter.com/replai_so"
+            class="underline"
+            >Twitter</a
+          >
+        </div>
+        <div class="">
+          🐛
+          <a
+            target="_blank"
+            href="mailto:sergeibynas@gmail.com?subject=Repliai Bug"
+            class="underline"
+            >Report a bug</a
+          >
+        </div>
+      </div>
+      <div class="mt-[15px]">
+        <div class="text-sm text-sky-500 mb-[30px]">
+          You have <span id="USAGE_TEXT">0</span>/<span id="LIMIT_TEXT"
+            >15</span
+          >
+          replies left
+        </div>
+        <div id="KEY_BLOCK">
+          <h2 class="text-2xl mb-1">License Key</h2>
+          <p class="text-sm mb-3">
+            Purchasing a licence lets you generate more AI-replies for Twitter
+          </p>
+          <p class="text-xsm">Enter your license key here:</p>
+          <div class="flex mt-1">
+            <input
+              id="KEY_FIELD"
+              placeholder="1F2AACF5-906548F1-B5C43F5A-00F56D1B"
+              type="text"
+              class="min-w-[365px] block rounded-md border border-gray-400 pl-4 py-1 focus:border-sky-500 focus:ring-sky-500 text-base"
+            />
+            <div class="ml-2 inline-flex rounded-md shadow">
+              <button
+                id="SAVE_BUTTON"
+                class="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-1 text-sm font-medium text-sky-600 hover:bg-sky-50"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+          <div id="ERROR_CODE" class="mt-1 text-red-500 text-sm hidden">
+            Invalid license key
+          </div>
+        </div>
+        <div id="SUCCESS_CODE" class="hidden">
+          <div class="mt-1 text-green-500 text-lg">
+            🎉 Your license key was successfully saved! Enjoy using Replai
+          </div>
+          <div class="mt-1 text-base">
+            Reload the Twitter page to apply your license key
+          </div>
+        </div>
+        <div class="mt-[35px]">
+          <p class="text-xs mb-[6px]">Don't have a licence key yet?</p>
+          <div class="inline-flex rounded-md shadow">
+            <a
+              target="_blank"
+              href="https://replai.so/pricing/"
+              class="inline-flex items-center justify-center rounded-md border border-transparent bg-sky-500 px-5 py-1 text-sm font-medium text-white hover:bg-sky-600"
+              >Get License Key</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>

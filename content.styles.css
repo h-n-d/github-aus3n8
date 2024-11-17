@@ -1,0 +1,28 @@
+.replaiso-btn-style {
+    cursor: pointer;
+    color: #1d9bf0;
+    border: 1px solid #1d9bf0;
+    background: transparent;
+    border-radius: 9999px;
+    padding: 3px 6px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 6px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.replaiso-btn-style:first-of-type {
+    margin-left: 0;
+}
+
+.replaiso-limit-label-style {
+    margin-left: 6px;
+    font-size: 11px;
+    text-align: center;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.replaiso-limit-container-style {
+    color: #1da1f2;
+    text-decoration: none;
+    font-size: 11px;
+}
